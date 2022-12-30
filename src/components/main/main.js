@@ -6,7 +6,11 @@ import './main.css';
 
 function Main() {
 
-    const [mainItems, setMainItems] = useState([]);
+    const [mainItems, setMainItems] = useState([
+        {
+            name: 'Lorem Ipsum is simply dummy'
+        }
+    ]);
 
     return (
         <div id="todo">
