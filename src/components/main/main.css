@@ -1,39 +1,40 @@
-.todoapp input::-webkit-input-placeholder {
-	font-weight: 300;
-	color: #e6e6e6;
-}
-
-.todoapp input::-moz-placeholder {
-	font-weight: 300;
-	color: #e6e6e6;
-}
-
-.todoapp input::input-placeholder {
-	font-weight: 300;
-	color: #e6e6e6;
-}
-
-
-.todoapp .bheader {
-	background: #ffffff5c;
+#todo .todoheader {
+	background: var(--color2);
     padding: 15px;
     border-radius: 10px;
 	margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.todoapp .bmain {
-	background: #ffffff5c;
+#todo .todomain {
+	background: var(--color2);
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-footer.bfooter {
-    background: #ffffff5c;
+#todo .todofooter {
+    background: var(--color2);
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+#todo input::-webkit-input-placeholder {
+	font-weight: 300;
+	color: var(--color1);
+}
+
+#todo input::-moz-placeholder {
+	font-weight: 300;
+	color: var(--color1);
+}
+
+#todo input::input-placeholder {
+	font-weight: 300;
+	color: var(--color1);
+}
+
+

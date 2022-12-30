@@ -18,7 +18,7 @@
 	border: 0;
 }
 
-.todoapp form .new-todo {
+#todo form .new-todo {
 	background: #fff;
 	border-radius: 10px;
 }

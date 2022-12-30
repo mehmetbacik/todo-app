@@ -9,14 +9,14 @@ function Main() {
     const [mainItems, setMainItems] = useState([]);
 
     return (
-        <div className="todoapp">
-            <header className="bheader">
+        <div id="todo">
+            <header className="todoheader">
                 <MainHeader setMainItem={setMainItems} mainItems={mainItems} />
             </header>
-            <section className="bmain">
+            <section className="todomain">
                 <MainItem setMainItem={setMainItems} mainItems={mainItems} />
             </section>
-            <footer className="bfooter">
+            <footer className="todofooter">
                 <MainFooter setMainItem={setMainItems} mainItems={mainItems} />
             </footer>
         </div>

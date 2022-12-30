@@ -57,13 +57,10 @@ function MainFooter({ setMainItem, mainItems }) {
 	};
 
 	return (
-		<footer className="footer" hidden={mainItems.length === 0}>
-			<span className="todo-count">
-				<strong> {mainItems.length} </strong>
-				items left
-			</span>
+		<div hidden={mainItems.length === 0}>
+			<span className='items'><strong> {mainItems.length} </strong>items left</span>
 
-			<ul className="filters">
+			<ul className="buttons">
 				<li>
 					<a className={selected.id === 'all' ? 'selected' : ''} onClick={showAll} href="#/" >All</a>
 				</li>
@@ -80,7 +77,7 @@ function MainFooter({ setMainItem, mainItems }) {
 					<a onClick={onDeleteAllCompleted} href="#/">Clear completed</a>
 				</li>
 			</ul>
-		</footer>
+		</div>
 	)
 };
 

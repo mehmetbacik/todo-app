@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
+:root {
+	--font: 'Rubik', sans-serif;
+	--color1: #e6e6e6;
+	--color2: #ffffff5c;
+	--color3: #fff;
+	--color4: #0075ff;
+	--color5: #04264f;
+}
+
 html,
 body {
 	margin: 0;
@@ -7,7 +16,7 @@ body {
 }
 
 body {
-	font-family: 'Rubik', sans-serif;
+	font-family: var(--font);
 	background-image: linear-gradient(to right, #00a0dc , #28d346);
 	height: 100vh;
 	display: flex;
