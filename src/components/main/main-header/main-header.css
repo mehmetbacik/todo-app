@@ -17,3 +17,8 @@
 .new-todo {
 	border: 0;
 }
+
+.todoapp form .new-todo {
+	background: #fff;
+	border-radius: 10px;
+}

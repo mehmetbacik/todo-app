@@ -10,13 +10,13 @@ function Main() {
 
     return (
         <div className="todoapp">
-            <header>
+            <header className="bheader">
                 <MainHeader setMainItem={setMainItems} mainItems={mainItems} />
             </header>
-            <section>
+            <section className="bmain">
                 <MainItem setMainItem={setMainItems} mainItems={mainItems} />
             </section>
-            <footer>
+            <footer className="bfooter">
                 <MainFooter setMainItem={setMainItems} mainItems={mainItems} />
             </footer>
         </div>
