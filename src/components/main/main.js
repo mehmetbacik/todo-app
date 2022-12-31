@@ -9,6 +9,8 @@ function Main() {
     const [mainItems, setMainItems] = useState([
         {
             name: 'Lorem Ipsum is simply dummy'
+        },{
+            name: 'Lorem Ipsum is simply dummy'
         }
     ]);
 

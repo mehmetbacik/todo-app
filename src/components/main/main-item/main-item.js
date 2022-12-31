@@ -45,30 +45,14 @@ function MainItem({ setMainItem, mainItems }) {
 			<ul className="todo-list">
 				{mainItems.map((mainItem, i) => (
 					<li key={i} className='d-flex'>
-						<div className='float-start'>
-							<input
-								onClick={(e) => onCheckboxClick(i)}
-								type="checkbox"
-								checked={mainItem.isCompleted === true}
-								hidden={mainItem.isVisible === false}
-								className='toggle'
-							/>
+						<div>
+							<input onClick={(e) => onCheckboxClick(i)} type="checkbox" checked={mainItem.isCompleted === true} hidden={mainItem.isVisible === false} />
 						</div>
 						<div className='list-item'>
-							<input
-								onChange={(e) => onChangeItems(i, e)}
-								value={mainItem.name}
-								className={(mainItem.isCompleted ? 'view completed' : 'view') + ' ' + (mainItem.isEditing ? 'edit' : '')}
-								hidden={mainItem.isVisible === false}
-								onFocus={(e) => focusFunc(i, e)}
-								onBlur={(e) => blurFunc(i, e)}
-							/>
+							<input onChange={(e) => onChangeItems(i, e)} value={mainItem.name} className={(mainItem.isCompleted ? 'view completed' : 'view') + ' ' + (mainItem.isEditing ? 'edit' : '')} hidden={mainItem.isVisible === false} onFocus={(e) => focusFunc(i, e)} onBlur={(e) => blurFunc(i, e)} />
 						</div>
-						<div className='float-end'>
-							<button
-								id={i} onClick={onDelete}
-								className="destroy m-0">
-							</button>
+						<div>
+							<button id={i} onClick={onDelete} className="destroy m-0"></button>
 						</div>
 					</li>
 				))}
