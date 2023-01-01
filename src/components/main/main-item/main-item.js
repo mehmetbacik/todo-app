@@ -37,7 +37,7 @@ function MainItem({ setMainItem, mainItems }) {
 	
 	const onDelete = (e) => {
 		
-		setMainItem(prevState => prevState.filter((el, index) => index !== e.target.id));
+		setMainItem(prevState => prevState.filter((el, index) => index != e.target.id));
 	}
 
 	return (
