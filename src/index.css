@@ -7,6 +7,8 @@
 	--color3: #fff;
 	--color4: #0075ff;
 	--color5: #04264f;
+	--color6: #00a0dc;
+	--color7: #28d346;
 }
 
 html,
@@ -17,7 +19,7 @@ body {
 
 body {
 	font-family: var(--font);
-	background-image: linear-gradient(to right, #00a0dc , #28d346);
+	background-image: linear-gradient(to right, var(--color6) , var(--color7));
 	height: 100vh;
 	display: flex;
 	align-items: center;
