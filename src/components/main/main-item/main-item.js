@@ -37,27 +37,25 @@ function MainItem({ setMainItem, mainItems }) {
 	
 	const onDelete = (e) => {
 		
-		setMainItem(prevState => prevState.filter((el, index) => index != e.target.id));
+		setMainItem(prevState => prevState.filter((el, index) => index !== e.target.id));
 	}
 
 	return (
-		<section className="main" >
-			<ul className="todo-list">
-				{mainItems.map((mainItem, i) => (
-					<li key={i} className='d-flex'>
-						<div>
-							<input onClick={(e) => onCheckboxClick(i)} type="checkbox" checked={mainItem.isCompleted === true} hidden={mainItem.isVisible === false} />
-						</div>
-						<div className='list-item'>
-							<input onChange={(e) => onChangeItems(i, e)} value={mainItem.name} className={(mainItem.isCompleted ? 'view completed' : 'view') + ' ' + (mainItem.isEditing ? 'edit' : '')} hidden={mainItem.isVisible === false} onFocus={(e) => focusFunc(i, e)} onBlur={(e) => blurFunc(i, e)} />
-						</div>
-						<div>
-							<button id={i} onClick={onDelete} className="destroy m-0"></button>
-						</div>
-					</li>
-				))}
-			</ul>
-		</section>
+		<ul className="todo-list">
+		{mainItems.map((mainItem, i) => (
+			<li key={i} className='d-flex'>
+				<div>
+					<input onClick={(e) => onCheckboxClick(i)} type="checkbox" checked={mainItem.isCompleted === true} hidden={mainItem.isVisible === false} />
+				</div>
+				<div className='list-item'>
+					<input onChange={(e) => onChangeItems(i, e)} value={mainItem.name} className={(mainItem.isCompleted ? 'view completed' : 'view') + ' ' + (mainItem.isEditing ? 'edit' : '')} hidden={mainItem.isVisible === false} onFocus={(e) => focusFunc(i, e)} onBlur={(e) => blurFunc(i, e)} />
+				</div>
+				<div>
+					<button id={i} onClick={onDelete} className="delete"></button>
+				</div>
+			</li>
+		))}
+	</ul>
 	)
 }
 

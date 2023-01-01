@@ -1,24 +1,20 @@
-.new-todo,
-.edit {
+#todo .todoheader .todo-add {
 	position: relative;
 	margin: 0;
 	width: 100%;
-	font-size: 24px;
-	font-family: inherit;
-	font-weight: inherit;
-	line-height: 1.4em;
+	font-size: 25px;
 	color: inherit;
-	padding: 6px;
+	padding: 8px;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.new-todo {
-	border: 0;
+#todo .todoheader .todo-add {
+	border-color: var(--color4);
 }
 
-#todo form .new-todo {
-	background: #fff;
+#todo .todoheader form .todo-add {
+	background: var(--color3);
 	border-radius: 10px;
 }

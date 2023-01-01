@@ -23,11 +23,9 @@ function MainHeader({ setMainItem, mainItems }) {
 	}
 
 	return (
-		<header className='header'>
-			<form onSubmit={onSubmit}>
-				<input value={input} onChange={onChangeInput} className="new-todo" placeholder="Add new todo..." autoFocus ref={ref} />
-			</form>
-		</header>
+		<form onSubmit={onSubmit}>
+			<input value={input} onChange={onChangeInput} className="todo-add" placeholder="Add new todo..." autoFocus ref={ref} />
+		</form>
 	)
 }
 

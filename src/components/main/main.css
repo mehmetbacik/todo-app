@@ -37,4 +37,12 @@
 	color: var(--color1);
 }
 
+#todo .d-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+#todo input:focus {
+	outline: 0;
+}
