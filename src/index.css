@@ -20,7 +20,7 @@ body {
 body {
 	font-family: var(--font);
 	background-image: linear-gradient(to right, var(--color6) , var(--color7));
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
